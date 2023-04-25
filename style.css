@@ -85,7 +85,7 @@ nav {
 }
 
 #check:checked ~ .nav-list {
-    height: 100vh;
+    height: 50vh;
     }
 
 #check:checked ~ .nav-list li{
