@@ -85,14 +85,57 @@ nav {
 }
 
 #check:checked ~ .nav-list {
-    height: 100vh;
+    height: 50vh;
     }
 
 #check:checked ~ .nav-list li{
     display: block;
     
 }
+@media (max-width: 501px){
+    * {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
 
+
+.whole-blue-background {
+  width: 501px;
+  height: 791px;
+  background: rgba(13,14,35,1);
+  opacity: 1;
+  position: absolute;
+  left: 0px;
+  overflow: hidden;
+}
+.quote-text {
+  width: 450px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 156px;
+  left: 42px;
+  font-family: Inter;
+  font-weight: Bold;
+  font-size: 7.5vw;
+  opacity: 1;
+  text-align: left;
+}
+.brain-image {
+  width: 501px;
+  height: 352px;
+  background: url("../images/v117_23.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 402px;
+  left: 0px;
+  overflow: hidden;
+}
+}
 @media (min-width:720px) {
     .nav {
     height: 100px;
@@ -117,8 +160,15 @@ nav {
         margin:0 20px;
         transition:none;
     }
-    
-    
+}
+
+@media(min-width: 720px) {
+    .nav-list  {
+       display: flex;
+       justify-content:flex-end;
+       gap:2em;
+    }
+
     .whole-page {
   width: 100%;
   height: 1024px;
@@ -140,29 +190,28 @@ nav {
   overflow: hidden;
 } 
  .brain-image {
-  width: 885px;
-  height: 628px;
-  background: url("images/v96_4.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  width: 61.5%;
+  height: 43.7%;
+  /*background: url("images/v96_4.png");*/
+  /*background-repeat: no-repeat;*/
+  /*background-position: center center;*/
+  /*background-size: cover;*/
   opacity: 1;
   position: absolute;
-  top: 91px;
-  left: 548px;
+  top: 8.9%;
+  left: 38.1%;
   overflow: hidden;
 } 
 .quote-text {
-  width: 450px;
+  width: 31.3%;
   color: rgba(255,255,255,1);
   position: absolute;
   top: 137px;
   left: 125px;
   font-family: Inter;
   font-weight: Bold;
-  font-size: 36px;
+  font-size: 2.5vw;
   opacity: 1;
   text-align: left;
 }
-    
 }
