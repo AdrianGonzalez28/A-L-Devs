@@ -37,6 +37,13 @@
         
         @media (max-width: 501px){
             .info-container {
-             flex-direction: column
+             flex-direction: column;
+             text-align: center;
+             margin-left: 0px;
+        
+            }
+            p {
+                self-align: center;
+                padding-left: 17px;
             }
         }
