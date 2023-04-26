@@ -3,7 +3,7 @@
             padding: 0;
         }
         .info-container {
-            background-color: #085379;
+            background-color: #0d0e23;
             display: flex;
         }
         #white {
@@ -16,7 +16,7 @@
             text-align: center;
         }
         #blue-text {
-            color: #0D0E23
+            color: #0d0e23;
         }
         img {
             height: 80%;

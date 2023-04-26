@@ -1,14 +1,14 @@
 * {
     padding: 0;
-    margin:0;
+    margin: 0;
     text-decoration: none;
-    list-style:none;
+    list-style: none;
     box-sizing: border-box;
 }
 
 body {
     font-family: sans-serif;
-    margin:auto;
+    margin: auto;
 }
 
 
@@ -23,8 +23,8 @@ nav {
 
 .logo-container {
     display: flex;
-    align-items:center;
-    width:auto;
+    align-items: center;
+    width: auto;
     margin: 0;
 }
 
@@ -37,17 +37,17 @@ nav {
     font-family: cursive;
     line-height: 75px;
     padding-left: 10px;
-    font-weight:bold;
-    color:white;
+    font-weight: bold;
+    color: white;
 }
 
 .nav-list {
-    position:fixed;
-    width:100%;
+    position: fixed;
+    width: 100%;
     height: 0vh;
-    top:75px;
+    top: 75px;
     background-color: #075379;
-    float:right;
+    float: right;
     text-align: center;
     transition: all .5s;
 }
@@ -55,163 +55,175 @@ nav {
 .nav-list li {
     display: none;
     line-height: 30px;
-    margin:50px 0;
+    margin: 50px 0;
     transition: all .5s;
 }
 
 .nav-list li a {
-    color:white;
-    font-size:20px;
-    text-transform:uppercase;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
 }
 
-.active, .nav-list li a:hover {
-    color:#5da19a;
+.active,
+.nav-list li a:hover {
+    color: #5da19a;
     transition: 0.50s;
 }
 
 .drop-button {
     display: block;
-    size:30px;
-    color:#075379;
-    float:right;
-    line-height:75px;
-    margin-right:40px;
-    cursor:pointer;
+    size: 30px;
+    color: #075379;
+    float: right;
+    line-height: 75px;
+    margin-right: 40px;
+    cursor: pointer;
 }
 
-#check{
-    display:none;
+#check {
+    display: none;
 }
 
-#check:checked ~ .nav-list {
+#check:checked~.nav-list {
     height: 50vh;
+}
+
+#check:checked~.nav-list li {
+    display: block;
+
+}
+
+@media (max-width: 501px) {
+    * {
+        box-sizing: border-box;
     }
 
-#check:checked ~ .nav-list li{
-    display: block;
-    
-}
-@media (max-width: 501px){
-    * {
-  box-sizing: border-box;
-}
-body {
-  font-size: 14px;
-}
+    body {
+        font-size: 14px;
+    }
 
 
-.whole-blue-background {
-  width: 501px;
-  height: 791px;
-  background: rgba(13,14,35,1);
-  opacity: 1;
-  position: absolute;
-  left: 0px;
-  overflow: hidden;
+    .whole-blue-background {
+        width: 501px;
+        height: 791px;
+        background: rgba(13, 14, 35, 1);
+        opacity: 1;
+        position: absolute;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .quote-text {
+        width: 450px;
+        color: rgba(255, 255, 255, 1);
+        position: absolute;
+        top: 156px;
+        left: 42px;
+        font-family: Inter;
+        font-weight: Bold;
+        font-size: 7.5vw;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .brain-image {
+        width: 501px;
+        height: 352px;
+        background: url("../images/v117_23.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 1;
+        position: absolute;
+        top: 402px;
+        left: 0px;
+        overflow: hidden;
+    }
 }
-.quote-text {
-  width: 450px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 156px;
-  left: 42px;
-  font-family: Inter;
-  font-weight: Bold;
-  font-size: 7.5vw;
-  opacity: 1;
-  text-align: left;
-}
-.brain-image {
-  width: 501px;
-  height: 352px;
-  background: url("../images/v117_23.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 402px;
-  left: 0px;
-  overflow: hidden;
-}
-}
+
 @media (min-width:720px) {
     .nav {
-    height: 100px;
-    background-color:transparent;
+        height: 100px;
+        background-color: transparent;
     }
+
     .drop-button {
-    display:none;
+        display: none;
     }
+
     .nav-list {
         position: relative;
-        height:100px;
-        top:0px;
-        background:none;
-        float:right;
-        text-align:right;
+        height: 100px;
+        top: 0px;
+        background: none;
+        float: right;
+        text-align: right;
         margin-right: 25px;
     }
+
     .nav-list li {
         display: inline-block;
-        opacity:1;
+        opacity: 1;
         line-height: 100px;
-        margin:0 20px;
-        transition:none;
+        margin: 0 20px;
+        transition: none;
     }
 }
 
 @media(min-width: 720px) {
-    .nav-list  {
-       display: flex;
-       justify-content:flex-end;
-       gap:2em;
+    .nav-list {
+        display: flex;
+        justify-content: flex-end;
+        gap: 2em;
     }
 
     .whole-page {
-  width: 100%;
-  height: 1024px;
-  background: rgba(255,255,255,1);
-  opacity: 1;
-  position: relative;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-} 
- .whole-blue-background {
-  width: 100%;
-  height: 100%;
-  background: rgba(13,14,35,1);
-  opacity: 1;
-  position: relative;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-} 
- .brain-image {
-  width: 61.5%;
-  height: 43.7%;
-  /*background: url("images/v96_4.png");*/
-  /*background-repeat: no-repeat;*/
-  /*background-position: center center;*/
-  /*background-size: cover;*/
-  opacity: 1;
-  position: absolute;
-  top: 8.9%;
-  left: 38.1%;
-  overflow: hidden;
-} 
-.quote-text {
-  width: 31.3%;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 137px;
-  left: 125px;
-  font-family: Inter;
-  font-weight: Bold;
-  font-size: 2.5vw;
-  opacity: 1;
-  text-align: left;
-}
+        width: 100%;
+        height: 1024px;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .whole-blue-background {
+        width: 100%;
+        height: 100%;
+        background: rgba(13, 14, 35, 1);
+        opacity: 1;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .brain-image {
+        width: 61.5%;
+        height: 43.7%;
+        /*background: url("images/v96_4.png");*/
+        /*background-repeat: no-repeat;*/
+        /*background-position: center center;*/
+        /*background-size: cover;*/
+        opacity: 1;
+        position: absolute;
+        top: 8.9%;
+        left: 38.1%;
+        overflow: hidden;
+    }
+
+    .quote-text {
+        width: 31.3%;
+        color: rgba(255, 255, 255, 1);
+        position: absolute;
+        top: 137px;
+        left: 125px;
+        font-family: Inter;
+        font-weight: Bold;
+        font-size: 2.5vw;
+        opacity: 1;
+        text-align: left;
+    }
 }
