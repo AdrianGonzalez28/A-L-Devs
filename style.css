@@ -121,6 +121,7 @@ body {
   font-size: 7.5vw;
   opacity: 1;
   text-align: left;
+  text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
 }
 .brain-image {
   width: 501px;
@@ -204,7 +205,7 @@ body {
 } 
 .quote-text {
   width: 31.3%;
-  color: rgba(255,255,255,1);
+  color: #ffffff;
   position: absolute;
   top: 137px;
   left: 125px;
