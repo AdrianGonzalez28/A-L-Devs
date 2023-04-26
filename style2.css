@@ -1,16 +1,17 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: rgb(23,36,80);
+           background-color: rgb(13,14,35);
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 40px;
+            
         }
         .info-container {
-            background-color: #0d0e23;
+            background-color: rgb(23,36,80);
             display: flex;
-            width: 900px;
+            width: 60%
             
         }
         #white {
@@ -21,6 +22,7 @@
             align-self: center;
             font-size: 24px;
             text-align: center;
+            padding-right: 30px;
         }
         #blue-text {
             color: #0d0e23;
@@ -28,6 +30,9 @@
         img {
             height: 80%;
             padding: 30px;
+        }
+        #mh {
+            width: 1024px;
         }
         
         @media (max-width: 501px){
