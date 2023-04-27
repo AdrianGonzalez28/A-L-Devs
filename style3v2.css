@@ -10,6 +10,7 @@
 body {
     font-family: sans-serif;
     margin: auto;
+    background:rgba(13, 14, 35, 1);
 }
 
 
@@ -127,6 +128,7 @@ small {
     justify-content:flex-end;
     margin-top:2em;
     font-weight:500;
+    color: white;
 }
 
 .card-body {
@@ -138,3 +140,7 @@ flex-direction: column !important;
 margin-top: auto !important;
 width:45%;
 }
+
+/*.container {*/
+/*    background-color: rgba(13, 14, 35, 1);*/
+/*}*/
