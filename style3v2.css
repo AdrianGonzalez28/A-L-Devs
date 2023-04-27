@@ -128,3 +128,13 @@ small {
     margin-top:2em;
     font-weight:500;
 }
+
+.card-body {
+display: flex !important;
+flex-direction: column !important;
+}
+
+.card .btn {
+margin-top: auto !important;
+width:45%;
+}
